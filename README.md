@@ -6,20 +6,20 @@
   <h3>🎯 AI-Powered Prompt Engineering Platform</h3>
   <p><strong>Transform your project ideas into optimized AI prompts with intelligent question generation and multi-AI enhancement</strong></p>
 
-  <img src="./docs/images/devprompter-demo.png" alt="DevPrompter - AI-Powered Prompt Engineering Platform" width="800">
+  <img src="https://gcdnb.pbrd.co/images/gXDEjjyneffL.png" alt="DevPrompter - AI-Powered Prompt Engineering Platform" width="800">
 
   <p>
-    <a href="https://github.com/hamodyweb/devprompter/stargazers">
-      <img src="https://img.shields.io/github/stars/hamodyweb/devprompter?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars">
+    <a href="https://github.com/hamodywe/devprompter/stargazers">
+      <img src="https://img.shields.io/github/stars/hamodywe/devprompter?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars">
     </a>
-    <a href="https://github.com/hamodyweb/devprompter/network/members">
-      <img src="https://img.shields.io/github/forks/hamodyweb/devprompter?style=for-the-badge&logo=github&color=blue" alt="GitHub Forks">
+    <a href="https://github.com/hamodywe/devprompter/network/members">
+      <img src="https://img.shields.io/github/forks/hamodywe/devprompter?style=for-the-badge&logo=github&color=blue" alt="GitHub Forks">
     </a>
-    <a href="https://github.com/hamodyweb/devprompter/issues">
-      <img src="https://img.shields.io/github/issues/hamodyweb/devprompter?style=for-the-badge&logo=github&color=red" alt="GitHub Issues">
+    <a href="https://github.com/hamodywe/devprompter/issues">
+      <img src="https://img.shields.io/github/issues/hamodywe/devprompter?style=for-the-badge&logo=github&color=red" alt="GitHub Issues">
     </a>
-    <a href="https://github.com/hamodyweb/devprompter/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/hamodyweb/devprompter?style=for-the-badge&color=green" alt="License">
+    <a href="https://github.com/hamodywe/devprompter/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/hamodywe/devprompter?style=for-the-badge&color=green" alt="License">
     </a>
   </p>
 
@@ -117,7 +117,7 @@ DevPrompter is a **sophisticated AI-powered platform** that revolutionizes how d
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/hamodyweb/devprompter.git
+git clone https://github.com/hamodywe/devprompter.git
 cd devprompter
 ```
 
@@ -356,16 +356,16 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ### How to Contribute
 
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/hamodyweb/devprompter/issues/new?template=bug_report.md)
-- 💡 **Feature Requests**: [Open an issue](https://github.com/hamodyweb/devprompter/issues/new?template=feature_request.md)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/hamodywe/devprompter/issues/new?template=bug_report.md)
+- 💡 **Feature Requests**: [Open an issue](https://github.com/hamodywe/devprompter/issues/new?template=feature_request.md)
 - 📝 **Documentation**: Help improve our docs
 - 🔧 **Code**: Submit pull requests
 
 ### Contributors
 
 <div align="center">
-  <a href="https://github.com/hamodyweb/devprompter/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=hamodyweb/devprompter" />
+  <a href="https://github.com/hamodywe/devprompter/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=hamodywe/devprompter" />
   </a>
 </div>
 
@@ -422,8 +422,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/hamodyweb">
-        <img src="https://github.com/hamodyweb.png" width="100px;" alt="Hamody Web"/>
+      <a href="https://github.com/hamodywe">
+        <img src="https://github.com/hamodywe.png" width="100px;" alt="Hamody Web"/>
         <br />
         <sub><b>Hamody Web</b></sub>
       </a>
@@ -447,11 +447,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <div align="center">
   <h3>⭐ Star this repo if DevPrompter helps you build better AI prompts!</h3>
   <p>
-    <a href="https://github.com/hamodyweb/devprompter/stargazers">
-      <img src="https://img.shields.io/github/stars/hamodyweb/devprompter?style=social" alt="GitHub stars">
+    <a href="https://github.com/hamodywe/devprompter/stargazers">
+      <img src="https://img.shields.io/github/stars/hamodywe/devprompter?style=social" alt="GitHub stars">
     </a>
-    <a href="https://twitter.com/intent/tweet?text=Check%20out%20DevPrompter%20-%20AI-powered%20prompt%20engineering%20platform!&url=https://github.com/hamodyweb/devprompter">
-      <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fhamodyweb%2Fdevprompter" alt="Tweet">
+    <a href="https://twitter.com/intent/tweet?text=Check%20out%20DevPrompter%20-%20AI-powered%20prompt%20engineering%20platform!&url=https://github.com/hamodywe/devprompter">
+      <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fhamodywe%2Fdevprompter" alt="Tweet">
     </a>
   </p>
   
