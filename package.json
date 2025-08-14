@@ -1,0 +1,37 @@
+{
+  "name": "devprompter",
+  "version": "1.0.0",
+  "description": "A prompt engineering platform that generates high-quality prompts for AI coding agents",
+  "main": "backend/dist/index.js",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test": "jest",
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamodywe/devprompter.git"
+  },
+  "keywords": [
+    "prompt-engineering",
+    "ai",
+    "code-generation",
+    "developer-tools"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamodywe/devprompter/issues"
+  },
+  "homepage": "https://github.com/hamodywe/devprompter#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}

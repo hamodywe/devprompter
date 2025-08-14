@@ -1,0 +1,11 @@
+[
+  {
+    "provider": "openai",
+    "encryptedKey": "wHFYUu9PfYvRj2NbnUIMPWXPpwRbrgQD5NTeodb2mNWkxy1fLdyF7otcVuTMqofkKnlkwMW3PnxHDuuUbhYYdeA4NF0KCYw2PNb1MbH6QBCX/U5vp5EXWmZ7FjVRv1taP57FmbXFSJR/kje6Z6Z1Y23x6oJr8mCDVxn0esBGOy06EIG9NkJ6jC+B/YVNQcfFQl1j6ZBTsrGX3yCASgM3/2VD4AvUPH6U2CdOvOIiVtU=",
+    "iv": "e37677eb54701bba95357c87252c5133",
+    "salt": "e956f8854731643e63a338017e2d1743",
+    "timestamp": "2025-08-14T11:44:27.609Z",
+    "usageCount": 1,
+    "lastUsed": "2025-08-14T11:44:27.629Z"
+  }
+]

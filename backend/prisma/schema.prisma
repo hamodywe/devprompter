@@ -1,0 +1,129 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ProjectType {
+  id          String     @id @default(uuid())
+  name        String     @unique
+  category    String
+  description String
+  icon        String?
+  order       Int        @default(0)
+  isActive    Boolean    @default(true)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  questions      Question[]
+  templates      Template[]
+  projects       Project[]
+  baseTemplateId String?
+  baseTemplate   Template?  @relation("BaseTemplate", fields: [baseTemplateId], references: [id])
+}
+
+model Question {
+  id                  String      @id @default(uuid())
+  projectTypeId       String
+  projectType         ProjectType @relation(fields: [projectTypeId], references: [id], onDelete: Cascade)
+  questionText        String
+  questionType        QuestionType
+  category            String?
+  phase               String?     // Question phase (foundation, technical, architecture, etc.)
+  helpText            String?
+  placeholder         String?
+  options             Json?       // For select/multiselect options
+  validationRules     Json?       // Validation rules like min/max, regex, etc.
+  conditionalLogic    Json?       // Logic for conditional questions
+  orderIndex          Int
+  phaseOrder          Int?        // Order within the phase
+  isRequired          Boolean     @default(true)
+  affectsPromptSection String?     // Which section of the prompt this affects
+  weight              Float       @default(1.0) // Importance weight for prompt generation
+  createdAt           DateTime    @default(now())
+  updatedAt           DateTime    @updatedAt
+
+  @@index([projectTypeId, orderIndex])
+  @@index([projectTypeId, phase, phaseOrder])
+}
+
+model Template {
+  id                String      @id @default(uuid())
+  name              String
+  description       String?
+  projectTypeId     String?
+  projectType       ProjectType? @relation(fields: [projectTypeId], references: [id], onDelete: SetNull)
+  templateStructure Json        // The actual template structure with variables
+  variables         Json        // List of variables and their mappings
+  sections          Json        // Template sections (opening, requirements, constraints, etc.)
+  version           String      @default("1.0.0")
+  isActive          Boolean     @default(true)
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  projects        Project[]
+  baseForTypes    ProjectType[] @relation("BaseTemplate")
+
+  @@index([projectTypeId])
+}
+
+model Project {
+  id                String      @id @default(uuid())
+  userId            String?     // Optional user ID for future authentication
+  projectTypeId     String
+  projectType       ProjectType @relation(fields: [projectTypeId], references: [id])
+  templateId        String?
+  template          Template?   @relation(fields: [templateId], references: [id])
+  projectName       String
+  description       String?
+  
+  // Enhanced project description fields
+  projectOverview   String?     @db.Text // Main project description
+  targetAudience    String?     // Target users/audience
+  businessGoals     Json?       // Business objectives array
+  successMetrics    String?     // How success will be measured
+  constraints       String?     // Project constraints and limitations
+  
+  answers           Json        // User's answers to questions
+  generatedPrompt   String      @db.Text
+  promptVersion     String      @default("1.0.0")
+  metadata          Json?       // Additional metadata about the generation
+  rating            Int?        // User rating of the generated prompt
+  feedback          String?     // User feedback
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([userId])
+  @@index([projectTypeId])
+}
+
+model QuestionSet {
+  id            String   @id @default(uuid())
+  name          String
+  description   String?
+  questions     Json     // Collection of questions for reuse
+  tags          String[]
+  isPublic      Boolean  @default(false)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+enum QuestionType {
+  TEXT
+  TEXTAREA
+  SELECT
+  MULTISELECT
+  NUMBER
+  BOOLEAN
+  DATE
+  URL
+  EMAIL
+  TECH_STACK
+  FILE_UPLOAD
+  RANGE
+  PHASE_SELECTOR
+}
