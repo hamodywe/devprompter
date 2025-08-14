@@ -8,20 +8,7 @@
 
   <img src="https://gcdnb.pbrd.co/images/gXDEjjyneffL.png" alt="DevPrompter - AI-Powered Prompt Engineering Platform" width="800">
 
-  <p>
-    <a href="https://github.com/hamodywe/devprompter/stargazers">
-      <img src="https://img.shields.io/github/stars/hamodywe/devprompter?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars">
-    </a>
-    <a href="https://github.com/hamodywe/devprompter/network/members">
-      <img src="https://img.shields.io/github/forks/hamodywe/devprompter?style=for-the-badge&logo=github&color=blue" alt="GitHub Forks">
-    </a>
-    <a href="https://github.com/hamodywe/devprompter/issues">
-      <img src="https://img.shields.io/github/issues/hamodywe/devprompter?style=for-the-badge&logo=github&color=red" alt="GitHub Issues">
-    </a>
-    <a href="https://github.com/hamodywe/devprompter/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/hamodywe/devprompter?style=for-the-badge&color=green" alt="License">
-    </a>
-  </p>
+
 
   <p>
     <img src="https://img.shields.io/badge/Next.js-15.4-black?style=for-the-badge&logo=next.js" alt="Next.js">
